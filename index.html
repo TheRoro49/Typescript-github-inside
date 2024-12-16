@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github TypeScript Insight</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="flex justify-center items-center min-h-screen">
+        <div class="text-center bg-white p-8 rounded-lg shadow-lg w-full max-w-lg">
+            <h1 class="text-3xl font-bold text-gray-900 mb-6">Github Insight - Users API</h1>
+            <form class="flex items-center space-x-4 mb-6">
+                <input class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" 
+                type="text" name="username" placeholder="Rechercher un utilisateur Github">
+                <button class="inline-flex items-center px-6 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="submit">
+                    Chercher
+                </button>
+            </form>
+            <div class=" containeur result w-full max-w-sm bg-white flex items-center border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <!-- Résultats de recherche seront affichés ici -->
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="src/main.ts"></script>
+</body>
+</html>
